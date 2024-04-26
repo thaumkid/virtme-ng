@@ -252,7 +252,7 @@ class Arch_aarch64(Arch):
         ret = Arch.qemuargs(is_native, use_kvm)
 
         if is_native:
-            ret.extend(["-M", "virt,gic-version=host"])
+            ret.extend(["-M", "virt,gic-version=3"]) # jahobbs change "host" to "3" so 
             ret.extend(["-cpu", "host"])
         else:
             # Emulate a fully virtual system.
