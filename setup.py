@@ -160,7 +160,7 @@ setup(
     scripts=[
         "bin/virtme-prep-kdir-mods",
     ],
-    include_package_data=True,
+    # include_package_data=True,
     classifiers=[
         "Environment :: Console",
         "Intended Audience :: Developers",
